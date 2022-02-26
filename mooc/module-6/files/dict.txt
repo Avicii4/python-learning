@@ -1,0 +1,7 @@
+ant [解释] 蚂蚁
+ancestor [解释] 祖先，祖宗
+play [解释] 玩，打
+player [解释] 玩家
+scan [解释] 扫描
+year [解释] 年，年份
+zoo [解释] 动物园

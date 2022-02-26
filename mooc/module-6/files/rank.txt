@@ -1,0 +1,10 @@
+Total valid data:9
+DORAEMON            Female    96.8
+Astroboy            Male      87.4
+Alice               Female    86.0
+Tom                 Male      86.0
+Jerry               Male      73.4
+Mike                Male      65.4
+James               Male      60.0
+Harden              Male      54.8
+Curry               Male      51.4
