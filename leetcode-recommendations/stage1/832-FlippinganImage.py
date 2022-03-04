@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # 让n 1变0，0变1，最简单的是1-n
     def flip_and_invert_image(self, image: List[List[int]]) -> List[List[int]]:
         res = []
         for lst in image:
