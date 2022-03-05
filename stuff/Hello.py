@@ -1,4 +1,6 @@
 from math import sqrt
+from functools import reduce
+from math import gcd
 
 
 # 输出100以内所有素数
@@ -39,6 +41,11 @@ def aa():
             print('鸡有{}只，兔有{}只'.format(ch, rabbit))
 
 
+def common():
+    vals = [6, 10, 15]
+    return reduce(gcd, vals) >= 2
+
+
 if __name__ == '__main__':
-    #x = int(''.join(list(map(str, list(range(1, 10))))))
-    aa()
+    # x = int(''.join(list(map(str, list(range(1, 10))))))
+    print(common())

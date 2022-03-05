@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def projection_area(self, grid: List[List[int]]) -> int:
         # area[0]: 非0元素的数量
-        # area[1]: grid逆置后每个子list中的最大值
+        # area[1]: grid转置后每个子list中的最大值
         # area[2]: 每个子list中的最大值
         area = [0] * 3
         n = len(grid)
