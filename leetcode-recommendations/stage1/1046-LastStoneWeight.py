@@ -30,4 +30,4 @@ if __name__ == '__main__':
         arr = list(map(int, input('请输入数组：').split()))
         if not arr:
             exit(-1)
-        print(sol.last_stone_weight(arr))
+        print(sol.last_stone_weight_2(arr))

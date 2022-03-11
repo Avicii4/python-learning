@@ -50,7 +50,7 @@ class Solution:
 
         def backtrace(cur=0):
             # 终止条件
-            if cur == n:
+            if cur == n and nums[:] not in res:
                 res.append(nums[:])
             for i in range(cur, n):
                 # 尝试交换目前值与cur之后的每个值
@@ -68,5 +68,7 @@ if __name__ == '__main__':
     sol = Solution()
     # nums = [1, 2, 3]
     # print(sol.permute_1(nums))
-    nums = [5, 6, 7, 9]
-    print(sol.permute_4(nums))
+    nums = [5, 6, 6, 9]
+    res = sol.permute_4(nums)
+    for r in res:
+        print(r)
