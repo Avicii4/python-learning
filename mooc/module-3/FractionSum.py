@@ -11,7 +11,7 @@ def calc(n: int) -> str:
         return 'n的范围应是[1,1000]'
     res = 0
     for i in range(1, n + 1):
-        res += (1 / i) * (-1) ** (i + 1)    # TODO 乘方优先级高于乘法
+        res += (1 / i) * (-1) ** (i + 1)
     return str('%.4f' % res)
 
 

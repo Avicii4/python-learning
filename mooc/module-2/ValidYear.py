@@ -11,7 +11,7 @@ def is_valid_year(year, month, day):
     elif month in [4, 6, 9, 11]:
         return day <= 30
     else:
-        if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):  # TODO 闰年是 400的倍数 或者 是4的倍数且不是100的倍数
+        if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
             return day <= 29
         else:  # 平年
             return day <= 28
