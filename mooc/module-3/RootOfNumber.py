@@ -11,7 +11,7 @@ start = 0 end = n
 def root(num):
     start, end = 0, num
     tmp = (start + end) / 2
-    while abs(tmp ** 2 - num) > 1e-6:    # TODO 注意科学记数法的写法
+    while abs(tmp ** 2 - num) > 1e-6:
         tmp = (start + end) / 2
         if tmp ** 2 > num:
             end = (start + end) / 2
