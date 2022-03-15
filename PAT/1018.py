@@ -33,14 +33,6 @@ if __name__ == '__main__':
                 dct_2['J'] += 1
     print(vict, tie, lose)
     print(lose, tie, vict)
-    # if max(dct_1.values()) == 0:
-    #     max_1 = 'B'
-    # else:
-    #     max_1 = max(dct_1, key=lambda t: (dct_1[t], -ord(t)))
-    # if max(dct_2.values()) == 0:
-    #     max_2 = 'B'
-    # else:
-    #     max_2 = max(dct_2, key=lambda t: (dct_2[t], -ord(t)))
     max_1 = max(dct_1, key=lambda t: (dct_1[t], -ord(t)))
     max_2 = max(dct_2, key=lambda t: (dct_2[t], -ord(t)))
-    print(max_1,max_2)
+    print(max_1, max_2)
