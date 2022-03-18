@@ -68,7 +68,7 @@ if __name__ == '__main__':
     sol = Solution()
     # nums = [1, 2, 3]
     # print(sol.permute_1(nums))
-    nums = [5, 6, 6, 9]
-    res = sol.permute_4(nums)
+    arr = [5, 6, 6, 9]
+    res = sol.permute_4(arr)
     for r in res:
         print(r)
