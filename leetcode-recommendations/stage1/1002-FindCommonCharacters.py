@@ -31,6 +31,7 @@ class Solution:
                 res = cnt
             else:
                 res &= cnt
+        # TODO 按字典中的数量输出
         return list(res.elements())
 
 

@@ -40,6 +40,7 @@ class Solution:
                     five -= 1
                     ten += 1
             else:
+                # 5美元比较珍贵，优先找出10美元面额
                 if five >= 1 and ten >= 1:
                     five -= 1
                     ten -= 1
@@ -56,4 +57,4 @@ if __name__ == '__main__':
         bills = list(map(int, input('请输入支付金额：').split()))
         if not bills:
             exit(-1)
-        print(sol.lemonade_change(bills))
+        print(sol.lemonade_change_2(bills))

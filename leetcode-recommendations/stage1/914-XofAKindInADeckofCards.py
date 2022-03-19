@@ -25,7 +25,7 @@ class Solution:
 
     # 用reduce求所有数的最大公因数
     def has_groups_size_x_2(self, deck: List[int]) -> bool:
-        vals = dict(Counter(deck)).values()
+        vals = Counter(deck).values()
         return reduce(gcd, vals) >= 2
 
 

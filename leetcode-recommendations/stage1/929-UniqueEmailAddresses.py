@@ -6,7 +6,8 @@ class Solution:
         def generate(email: str) -> str:
             [local, domain] = email.split('@')
             idx = local.find('+')
-            if idx==-1:
+            # TODO find()找不到返回-1，index()找不到就抛异常
+            if idx == -1:
                 idx = len(local)
             local = ''.join(local[:idx].split('.'))
             return local + '@' + domain
@@ -18,5 +19,5 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
-    arr = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
+    arr = ["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"]
     print(sol.num_unique_emails(arr))

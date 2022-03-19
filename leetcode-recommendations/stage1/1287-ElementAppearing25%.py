@@ -11,6 +11,7 @@ class Solution:
                 return num
 
     def find_special_integer_2(self, arr: List[int]) -> int:
+        # TODO most_common()返回类型->List[Tuple]
         return Counter(arr).most_common(1)[0][0]
 
     # 很省时间

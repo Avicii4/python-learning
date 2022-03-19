@@ -20,6 +20,7 @@ class Solution:
         for r, c in indices:
             row[r] = not row[r]
             col[c] = not col[c]
+        # TODO 这里再想想奇偶变化与异或的关系
         return sum((row[i] ^ col[j] for i in range(m) for j in range(n)))
 
 

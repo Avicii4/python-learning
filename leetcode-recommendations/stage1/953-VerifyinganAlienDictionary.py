@@ -3,12 +3,13 @@ from typing import List
 
 class Solution:
     def is_alien_sorted_1(self, words: List[str], order: str) -> bool:
+        # TODO 按照某序列的原本顺序排列
         order_words = list(sorted(words, key=lambda x: [order.index(ch) for ch in x]))
         return order_words == words
 
     def is_alien_sorted_2(self, words: List[str], order: str) -> bool:
         order_map = {v: i for i, v in enumerate(order)}
-        return words == list(sorted(words, key=lambda x: [order_map[ch] for ch in x]))
+        return words == sorted(words, key=lambda x: [order_map[ch] for ch in x])
 
     # 依次比较相邻单词
     def is_alien_sorted_3(self, words: List[str], order: str) -> bool:
