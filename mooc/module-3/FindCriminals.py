@@ -19,7 +19,7 @@ if __name__ == '__main__':
                   for D in values
                   for E in values]   # 创造幂集，值得学习
     for item in candidates:
-        count = 0
+        count = 0  # 计算满足五个条件的多少
         if item[0] + item[1] == 2 or item[0] == 0:  # A、B都参加或A没参加
             count += 1
         if item[1] + item[2] == 1:  # B，C一人参加
